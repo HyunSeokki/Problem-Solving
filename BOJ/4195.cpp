@@ -6,7 +6,6 @@ using namespace std;
 int t, F;
 map <string, int> level;
 map <string, string> parent;
-map <string, string>::iterator iter;
 
 string find(string x)
 {
@@ -24,12 +23,12 @@ void uni(string u, string v)
 	if (level[u] > level[v])
 	{
 		parent[v] = u;
-		level[u]+=level[v];
+		level[u] += level[v];
 	}
 	else
 	{
 		parent[u] = v;
-		level[v]+=level[u];
+		level[v] += level[u];
 	}
 }
 
