@@ -19,9 +19,7 @@ void init()
 
 	flag = 0;
 
-	for (int i = 0; i < 501; i++)
-		cnt[i] = 0;
-	//memset(cnt, 0, sizeof(int) * sizeof(cnt));
+	memset(cnt, 0, sizeof(int) * 501);
 	ans.clear();
 }
 
